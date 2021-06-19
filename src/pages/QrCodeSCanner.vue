@@ -3,6 +3,7 @@
     <h5>scaner</h5>
     <div style="height:200px;width:200px;border:2px solid red">
       <qrcode-stream @decode="onDecode"></qrcode-stream>
+      <h5>{{data}}</h5>
     </div>
   </q-page>
 </template>
@@ -22,11 +23,7 @@ export default {
   methods: {
     onDecode(data) {
       this.data = data;
-      console.log(data)
-      return {
-        ...toRefs(state),
-        onDecode
-      };
+      console.log(data);
     }
   }
 };
