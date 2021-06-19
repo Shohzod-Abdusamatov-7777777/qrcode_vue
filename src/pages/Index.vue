@@ -1,19 +1,10 @@
 <template>
   <q-page class="flex flex-center column bg-grey-5">
     <div id="app">
-      <q-input v-model="barcodeValue" /><br />
-      <barcode v-bind:value="barcodeValue" format="upc" fontOptions="bold">
-        Show this if the rendering fails.
+      <q-input v-model="barcodeValue" outlined />
+      <barcode v-bind:value="barcodeValue" format="ean13" fontOptions="bold">
+        <strong class="text-red">Bunday barcode muvjud emas!</strong>
       </barcode>
-      <br><br>
-      <h6 class="q-ma-none">jsbarcode format upc</h6>
-      <svg
-        class="barcode"
-        jsbarcode-format="upc"
-        v-bind:jsbarcode-value="barcodeValue"
-        jsbarcode-textmargin="0"
-        jsbarcode-fontoptions="bold"
-      ></svg>
     </div>
   </q-page>
 </template>
@@ -25,12 +16,10 @@ export default {
   components: {
     barcode: VueBarcode
   },
-  mounted() {
-    JsBarcode(".barcode").init();
-  },
+
   data() {
     return {
-      barcodeValue: "123456789999"
+      barcodeValue: "4780040670048"
     };
   }
 };
