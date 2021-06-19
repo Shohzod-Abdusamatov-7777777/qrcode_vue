@@ -5,6 +5,7 @@
       <barcode v-bind:value="barcodeValue" format="upc" fontOptions="bold">
         Show this if the rendering fails.
       </barcode>
+      <br><br>
       <h6 class="q-ma-none">jsbarcode format upc</h6>
       <svg
         class="barcode"

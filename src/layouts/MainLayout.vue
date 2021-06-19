@@ -58,12 +58,6 @@ const linksData = [
     link: "/qrcode"
   },
   {
-    title: "QrCode Scaner",
-    caption: "QRCode Scaner",
-    icon: "code",
-    link: "/scaner"
-  },
-  {
     title: "Barcode Scaner",
     caption: "Barcode Scaner",
     icon: "code",

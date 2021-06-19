@@ -1,6 +1,6 @@
 <template>
   <q-page class="flex flex-center column bg-grey-4">
-    <div style="width:300px;border:2px solid red;padding:0">
+    <div style="width:300px;">
       <StreamBarcodeReader
         @decode="onDecode"
         @loaded="onLoaded"
