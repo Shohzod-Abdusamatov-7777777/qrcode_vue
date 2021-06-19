@@ -14,7 +14,6 @@
         <q-toolbar-title>
           Quasar App
         </q-toolbar-title>
-
       </q-toolbar>
     </q-header>
 
@@ -57,11 +56,18 @@ const linksData = [
     caption: "QRCode",
     icon: "code",
     link: "/qrcode"
-  }, {
+  },
+  {
     title: "QrCode Scaner",
     caption: "QRCode Scaner",
     icon: "code",
     link: "/scaner"
+  },
+  {
+    title: "Barcode Scaner",
+    caption: "Barcode Scaner",
+    icon: "code",
+    link: "/barcode-scaner"
   }
 ];
 
