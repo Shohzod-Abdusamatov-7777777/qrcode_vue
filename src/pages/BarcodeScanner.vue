@@ -1,12 +1,12 @@
 <template>
   <q-page class="flex flex-center column bg-grey-4">
-    <div style="height:200px;width:200px;border:2px solid red">
+    <div style="width:300px;border:2px solid red;padding:0">
       <StreamBarcodeReader
         @decode="onDecode"
         @loaded="onLoaded"
       ></StreamBarcodeReader>
-      <h6>{{data}}</h6>
     </div>
+    <h6>{{ data }}</h6>
   </q-page>
 </template>
 
